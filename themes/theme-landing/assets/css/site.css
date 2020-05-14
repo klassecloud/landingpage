@@ -1,3 +1,38 @@
 .starter {
   color: blue;
 }
+
+.rounded-xl {
+  border-radius: 0.85rem;
+}
+
+.shadow-header {
+  box-shadow: 0 -16px 16px 16px rgba(0, 0, 0, 0.15) ;
+}
+
+.text-2xs {
+  font-size: 0.7rem;
+}
+
+
+input#nav-toggle:checked~label#show-button {
+  display: none;
+}
+
+input#nav-toggle:checked~label#hide-button {
+  display: flex;
+}
+
+input#nav-toggle:checked~#nav-menu {
+  display: flex;
+}
+
+@screen sm {
+  input#nav-toggle:checked~label#hide-button {
+    display: none;
+  }
+
+  input#nav-toggle:checked~#nav-menu {
+    display: flex;
+  }
+}

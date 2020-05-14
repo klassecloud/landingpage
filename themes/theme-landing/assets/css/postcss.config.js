@@ -5,7 +5,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     // Specify the paths to all of the template files in your project
     content: [
         themeDir + 'layouts/**/*.html',
-        themeDir + 'exampleSite/content/**/*.html',
+        themeDir + 'content/**/*.html',
         'layouts/**/*.html',
         'content/**/*.html',
     ],
@@ -22,11 +22,11 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     }
 })
 
-module.exports = {    
-    plugins: [        
+module.exports = {
+    plugins: [
         require('postcss-import')({
             path: [themeDir]
-            }), 
+            }),
         require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
         require('autoprefixer')({
             path: [themeDir]
