@@ -1,0 +1,8 @@
+baseURL = "/"
+title = "klasse.cloud [DEV]"
+
+enableMissingTranslationPlaceholders = true
+refLinksErrorLevel = "WARNING"
+buildDrafts = true
+buildFuture = true
+verbose = true

@@ -1,1 +1,2 @@
+publishDir = "public"
 canonifyURLs = true

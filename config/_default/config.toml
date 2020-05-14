@@ -1,4 +1,8 @@
 baseURL = "https://klasse.cloud/"
-languageCode = "de"
 title = "klasse.cloud"
 theme = "theme-landing"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Make sure only prod builds are built to public/
+# prevents leaking drafts, expired and future pages
+publishDir = "build/development"
