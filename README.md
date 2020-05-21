@@ -22,5 +22,6 @@ For the production build, just run `hugo`, the output can be found in `public/`.
 The theme is built with [Tailwind](https://tailwindcss.com/) and based on the [Tailwind Starter](https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter) Theme for Hugo.
 
 **Quick links:**
-- [Tailwind Docs](https://tailwindcss.com/docs/)
-- [Tailwind config Stub](https://github.com/tailwindcss/tailwindcss/blob/20348ae914d4f2c8ab731d79c8f8cc5e308d43cd/stubs/defaultConfig.stub.js)
+- [Hugo docs](https://gohugo.io/documentation/)
+- [Tailwind docs](https://tailwindcss.com/docs/)
+- [Tailwind config stub](https://github.com/tailwindcss/tailwindcss/blob/20348ae914d4f2c8ab731d79c8f8cc5e308d43cd/stubs/defaultConfig.stub.js)
