@@ -1,8 +1,8 @@
 <header class="block w-full shadow-header">
   <div class="container mx-auto px-4 py-2 font-semibold text-xs">
     <nav class="flex items-center justify-between flex-wrap">
-      <a href="{{ .Site.Home.Permalink }}" class="flex items-center text-gray-700 font-bold">
-        <span class="block bg-gray-400 w-16 h-12 mr-4"></span>
+      <a href="{{ .Site.Home.Permalink }}">
+        <img src="/klasse.cloud.logo.jpg" alt="" class="w-28">
       </a>
 
       <input id="nav-toggle" type=checkbox class="hidden">
@@ -22,19 +22,14 @@
       </label>
 
       <ul id="nav-menu" class="flex flex-wrap sm:flex-no-wrap justify-end w-full sm:w-auto hidden sm:flex mt-2 sm:mt-0 sm:space-x-2 items-center">
-        {{ with .Site.GetPage "/about" }}
-        <li>
-          <a href="{{ .Permalink }}" class="block px-3 py-1 hover:text-blue-400">{{ .Title }}</a>
-        </li>
-        {{ end }}
-        {{ range .Site.Sections }}
-        <li>
-          <a href="{{ .Permalink }}" class="block px-3 py-1 hover:text-blue-400">{{ .Title }}</a>
-        </li>
+        {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" class="block px-3 py-1 hover:text-blue-400">{{ .Name }}</a>
+          </li>
         {{ end }}
 
         <li>
-          <a href="" class="block border-2 py-1 border-yellow-600 rounded-xl py-2 px-10 text-2xs ml-3 mt-1 sm:mt-0 w-48 text-center sm:w-auto">Leg Los!</a>
+          <a href="" class="block border-2 py-1 border-brand-yellow rounded-xl py-2 px-10 text-2xs ml-3 mt-1 sm:mt-0 w-48 text-center sm:w-auto">Leg Los!</a>
         </li>
       </ul>
     </nav>

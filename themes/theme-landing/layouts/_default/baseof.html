@@ -2,12 +2,14 @@
 <html lang='{{ .Site.LanguageCode }}'>
     {{- partial "head.html" . -}}
     <body class="flex flex-col min-h-screen">
+        <a name="top" id="top" aria-hidden="true" class="block h-0"></a>
+
         {{- partial "dev-size-indicator.html" . -}}
         {{- partial "header.html" . -}}
         <main class="flex-1">
         {{- block "main" . }}{{- end }}
         </main>
-        {{- partial "dev-parameters.html" . -}}
         {{- partial "footer.html" . -}}
+        {{- partial "dev-parameters.html" . -}}
     </body>
 </html>
