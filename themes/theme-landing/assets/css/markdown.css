@@ -1,0 +1,8 @@
+.markdown h1 {
+  font-size: theme('fontSize.xl');
+  margin-bottom: theme('spacing.6');
+}
+
+.markdown p {
+  margin-bottom: theme('spacing.4');
+}
