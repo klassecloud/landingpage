@@ -4,14 +4,14 @@ Static landing page built with [Hugo](https://gohugo.io/)
 
 # Setup
 
-- install [Hugo](https://gohugo.io/) if you haven't. So far built with v0.69.2.
+- install [Hugo](https://gohugo.io/) (so far built with v0.69.2)
 - clone repo and `git checkout dev`
 - run `(cd themes/theme-landing && npm install)`
 - start dev server with `hugo server`
 
 # Staging & Production
 
-The staging build mirrors production, but does not use an absolute URL to allow deploying anywhere for development/preview purposes. In both environments drafts and expired/future content is ignored and CSS gets purged.
+The staging build mirrors production, but does not use an absolute URL, to allow deploying anywhere for development/preview purposes. In both environments drafts and expired/future content is ignored and CSS gets purged.
 
 The staging build process can be run with `hugo --environment staging` and outputs to `build/staging/`.
 
