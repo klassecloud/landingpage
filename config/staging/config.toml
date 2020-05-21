@@ -1,0 +1,9 @@
+baseURL = "/"
+title = "klasse.cloud [STAGING]"
+
+publishDir = "build/staging"
+canonifyURLs = true
+
+buildDrafts = false
+buildFuture = false
+verbose = true

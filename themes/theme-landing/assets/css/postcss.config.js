@@ -1,4 +1,5 @@
 const themeDir = __dirname + '/../../';
+const doPurge = ['production', 'staging'].includes(process.env.HUGO_ENVIRONMENT)
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
@@ -22,6 +23,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     }
 })
 
+
 module.exports = {
     plugins: [
         require('postcss-import')({
@@ -31,6 +33,6 @@ module.exports = {
         require('autoprefixer')({
             path: [themeDir]
         }),
-        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
+        ...(doPurge ? [purgecss] : [])
     ]
 }
